@@ -111,7 +111,7 @@ export default function ContactSection() {
             {/* Quick Stats list inside panel */}
             <div className="flex flex-col gap-4 border-y border-white/10 py-8">
               <div className="flex items-center gap-3.5 group">
-                <div className="w-11 h-11 rounded-xl bg-cyan-400/10 text-cyan-405 border border-cyan-400/20 flex items-center justify-center transition-colors">
+                <div className="w-11 h-11 rounded-xl bg-cyan-400/10 text-cyan-400 border border-cyan-400/20 flex items-center justify-center transition-colors">
                   <IconRenderer name="Mail" size={18} />
                 </div>
                 <div>
@@ -131,18 +131,6 @@ export default function ContactSection() {
                   <a href="tel:+639935152880" className="text-white text-xs sm:text-sm font-semibold hover:text-cyan-400 transition-colors">
                     +63 993 515 2880
                   </a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-xl bg-cyan-400/10 text-cyan-400 border border-cyan-400/20 flex items-center justify-center">
-                  <IconRenderer name="Sparkles" size={18} />
-                </div>
-                <div>
-                  <span className="text-[9px] font-mono text-white/40 uppercase tracking-widest block">COMMUNICATION RADAR</span>
-                  <p className="text-white text-xs sm:text-sm font-semibold">
-                    Mon - Fri • 9:00 AM - 6:00 PM UTC+8
-                  </p>
                 </div>
               </div>
             </div>
