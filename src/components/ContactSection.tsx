@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import emailjs from '@emailjs/browser';
 import IconRenderer from "./IconRenderer";
 
 export default function ContactSection() {
@@ -10,26 +11,64 @@ export default function ContactSection() {
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const budgets = ["$2,500 - $5,000", "$5,000 - $10,000", "$10,000+", "Consultancy Retainer"];
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) return;
 
     setIsSubmitting(true);
+    setErrorMessage("");
     
-    // Simulate API registration securely with latency
-    setTimeout(() => {
+    // EmailJS configuration from environment variables
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    // Check if EmailJS is configured
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      setIsSubmitting(false);
+      setErrorMessage("EmailJS is not configured. Please set up your environment variables.");
+      return;
+    }
+
+    // Template parameters that will be sent to EmailJS
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      company: company || "Not specified",
+      budget: budget,
+      message: message,
+      to_name: "Princess Ann Dadul", // Your name
+    };
+
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        templateParams,
+        PUBLIC_KEY
+      );
+      
+      // Success - show success message
       setIsSubmitting(false);
       setSubmitSuccess(true);
       
-      // Clear states
+      // Clear form fields
       setName("");
       setEmail("");
       setCompany("");
       setMessage("");
-    }, 1500);
+      setBudget("$5,000 - $10,000");
+    } catch (error) {
+      // Error handling
+      console.error("EmailJS Error:", error);
+      setIsSubmitting(false);
+      setErrorMessage("Failed to send message. Please try again or contact directly via email.");
+    }
   };
 
   return (
@@ -249,6 +288,17 @@ export default function ContactSection() {
                     <span>{isSubmitting ? "Dispatching Message..." : "Dispatch Briefing Request"}</span>
                     <IconRenderer name="Send" size={13} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
                   </button>
+
+                  {/* Error Message Display */}
+                  {errorMessage && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="p-4 bg-red-500/10 border border-red-500/30 rounded-xl text-red-400 text-sm text-center"
+                    >
+                      {errorMessage}
+                    </motion.div>
+                  )}
 
                 </motion.form>
               ) : (
