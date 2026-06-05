@@ -41,7 +41,7 @@ export default function ContactSection() {
       company: company || "Not specified",
       budget: budget,
       message: message,
-      to_name: "Princess Ann Dadul", // Your name
+      to_name: "Princess Anne Dadul", // Your name
     };
 
     try {
@@ -318,7 +318,7 @@ export default function ContactSection() {
                   </h3>
                   
                   <p className="text-white/60 text-sm font-light max-w-md mb-8 leading-relaxed">
-                    Thank you. Princess Ann Dadul has received your briefing logs. A formal diagnostic response and calendar link will be dispatched to your email within 12 hours.
+                    Thank you. Princess Anne Dadul has received your briefing logs. A formal diagnostic response and calendar link will be dispatched to your email within 12 hours.
                   </p>
 
                   <button

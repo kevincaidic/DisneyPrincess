@@ -481,7 +481,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "VP of Product",
     company: "Finera Global",
     rating: 5,
-    feedback: "Princess Ann Dadul is an absolute design prodigy. She completely overhauled our financial asset platform, turning high-density data matrices into beautiful bento-grid modules. Creative, professional, highly communicative — our conversion rate spiked by 34% within the first month of deployment. Exceptional luxury style!",
+    feedback: "Princess Anne Dadul is an absolute design prodigy. She completely overhauled our financial asset platform, turning high-density data matrices into beautiful bento-grid modules. Creative, professional, highly communicative — our conversion rate spiked by 34% within the first month of deployment. Exceptional luxury style!",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
   },
   {

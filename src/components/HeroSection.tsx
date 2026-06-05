@@ -55,7 +55,7 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-white/60 text-base sm:text-lg md:text-xl font-sans font-light leading-relaxed max-w-xl mb-10"
           >
-            Princess Ann Dadul is a strategic designer specializing in high-end interfaces that bridge the gap between human emotion and digital functionality.
+            Princess Anne Dadul is a strategic designer specializing in high-end interfaces that bridge the gap between human emotion and digital functionality.
           </motion.p>
  
           {/* Action Call CTR Section */}
@@ -149,7 +149,7 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
           >
             <img
               src="/profile/PA dadul.png"
-              alt="Princess Ann Dadul UI/UX Portrait"
+              alt="Princess Anne Dadul UI/UX Portrait"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover grayscale-[15%] transition-transform duration-700 hover:scale-105 group-hover:grayscale-0"
             />
@@ -161,7 +161,7 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
             <div className="absolute inset-x-0 bottom-0 p-4 bg-black/60 backdrop-blur-sm border-t border-white/[0.08] flex items-center justify-between pointer-events-none">
               <div>
                 <span className="text-[10px] font-mono uppercase tracking-wider text-purple-400">Design Director</span>
-                <p className="text-white text-xs font-semibold">Princess Ann Dadul</p>
+                <p className="text-white text-xs font-semibold">Princess Anne Dadul</p>
               </div>
               <div className="flex gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />

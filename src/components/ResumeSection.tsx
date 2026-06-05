@@ -403,7 +403,7 @@ export default function ResumeSection() {
                       <div className="w-24 h-24 rounded-lg overflow-hidden border border-slate-250 bg-slate-50 shrink-0 shadow-sm">
                         <img
                           src={RESUME_DATA.photo}
-                          alt="Princess Ann Dadul"
+                          alt="Princess Anne Dadul"
                           className="w-full h-full object-cover"
                         />
                       </div>

@@ -36,7 +36,7 @@ export default function AboutSection() {
             </h3>
             
             <p className="text-white/60 text-sm sm:text-base leading-relaxed">
-              I am Princess Ann Dadul, a seasoned freelance UI/UX designer who collaborates with forward-thinking brands, enterprise agencies, and fast-growing founders to model high-converting digital products. My aesthetic matches luxury, minimalism, and strict alignment, ensuring every project balances gorgeous visuals with analytical precision.
+              I am Princess Anne Dadul, a seasoned freelance UI/UX designer who collaborates with forward-thinking brands, enterprise agencies, and fast-growing founders to model high-converting digital products. My aesthetic matches luxury, minimalism, and strict alignment, ensuring every project balances gorgeous visuals with analytical precision.
             </p>
 
             <p className="text-white/40 text-sm sm:text-base leading-relaxed">

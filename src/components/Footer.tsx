@@ -30,7 +30,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
         {/* Legal copyright credits */}
         <p className="text-[11px] font-mono text-white/40 uppercase tracking-widest text-center">
-          © {currentYear} Princess Ann Dadul • Elite Freelance Design Studio. All Rights Reserved.
+          © {currentYear} Princess Anne Dadul • Elite Freelance Design Studio. All Rights Reserved.
         </p>
 
         {/* Quick Back-to-top */}
