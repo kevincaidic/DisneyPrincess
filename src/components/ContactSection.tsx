@@ -124,6 +124,18 @@ export default function ContactSection() {
 
               <div className="flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-xl bg-cyan-400/10 text-cyan-400 border border-cyan-400/20 flex items-center justify-center">
+                  <IconRenderer name="Phone" size={18} />
+                </div>
+                <div>
+                  <span className="text-[9px] font-mono text-white/40 uppercase tracking-widest block">PHONE NUMBER</span>
+                  <a href="tel:+639935152880" className="text-white text-xs sm:text-sm font-semibold hover:text-cyan-400 transition-colors">
+                    +63 993 515 2880
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3.5">
+                <div className="w-11 h-11 rounded-xl bg-cyan-400/10 text-cyan-400 border border-cyan-400/20 flex items-center justify-center">
                   <IconRenderer name="Sparkles" size={18} />
                 </div>
                 <div>
