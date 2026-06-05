@@ -116,8 +116,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <span className="text-[9px] font-mono text-white/40 uppercase tracking-widest block">DIRECT EMAIL</span>
-                  <a id="contact_email_link" href="mailto:princess@dadulux.com" className="text-white text-xs sm:text-sm font-semibold hover:text-cyan-400 transition-colors">
-                    princess.dadul@designstudio.com
+                  <a id="contact_email_link" href="mailto:princessannedadul@gmail.com" className="text-white text-xs sm:text-sm font-semibold hover:text-cyan-400 transition-colors">
+                    princessannedadul@gmail.com
                   </a>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function ContactSection() {
               <div className="flex gap-4">
                 <a
                   id="contact_social_instagram"
-                  href="https://instagram.com/princessanndadul"
+                  href="https://www.instagram.com/_itsannieyah"
                   target="_blank"
                   rel="noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-cyan-400/30 flex items-center justify-center transition-colors"
@@ -152,7 +152,7 @@ export default function ContactSection() {
 
                 <a
                   id="contact_social_facebook"
-                  href="https://facebook.com/princessanndadul"
+                  href="https://www.facebook.com/annie.dadul"
                   target="_blank"
                   rel="noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-cyan-400/30 flex items-center justify-center transition-colors"
